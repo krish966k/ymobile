@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Commerce Store</title>
+ 
+  
+    
+
+
+
+ 
+ <style>
+
+
+
+
+
+
+/* CSS for styling the Follow Us section */
+    /* You can customize the styles based on your needs */
+    /* This is just a basic example */
+    .follow-us-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .follow-us-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .social-media-icons {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .social-media-icons li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .social-media-icons li:last-child {
+      margin-right: 0;
+    }
+    .social-media-icons a {
+      color: #fdf9f9;
+      text-decoration: none;
+      font-size: 24px;
+    }
+
+
+/* CSS for styling the Returns & Exchanges section */
+    /* You can customize the styles based on your needs */
+    /* This is just a basic example */
+    .returns-exchanges-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px 20px;
+      text-align: left;
+    }
+    .returns-exchanges-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .returns-exchanges-section p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+
+ /* CSS for styling the shipping information section */
+    /* You can customize the styles based on your needs */
+    /* This is just a basic example */
+    .shipping-info-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px 20px;
+      text-align: left;
+    }
+    .shipping-info-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .shipping-info-section p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+
+ /* CSS for styling the contact section */
+    /* You can customize the styles based on your needs */
+    /* This is just a basic example */
+    .contact-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .contact-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .contact-section p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .contact-form {
+      margin-top: 20px;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    .contact-form textarea {
+      height: 150px;
+    }
+    .contact-form input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .contact-form input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+ /* CSS for styling the footer */
+    /* You can customize the styles based on your needs */
+    /* This is just a basic example */
+
+    /* Footer styles */
+    footer {
+      background-color: #2c2828;
+      color: #f9f4f4;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* Footer container styles */
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Footer section styles */
+    .footer-section {
+      flex: 1 1 300px;
+      margin-bottom: 20px;
+    }
+
+    /* Footer section headings styles */
+    .footer-section h3 {
+      margin-bottom: 15px;
+      color: #f7f3f3;
+    }
+
+    /* Footer links styles */
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      color: #f3eded;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: #141414;
+    }
+
+    /* Social media icons styles */
+    .social-media-icons {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .social-media-icons li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .social-media-icons li:last-child {
+      margin-right: 0;
+    }
+
+    .social-media-icons a {
+      color: #666;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .social-media-icons a:hover {
+      color: #000;
+    }
+
+ /* CSS for styling the icons */
+    /* You can customize the styles based on your needs */
+    /* This is just a basic example */
+    .icon {
+      font-size: 24px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    .cart-icon::after {
+      content: "🛒";
+      float: right;
+    }
+    .heart-icon::after {
+      content: "❤️";
+      color: red;
+      float: right;
+    }
+
+/* CSS for styling the form */
+    /* You can customize the styles based on your needs */
+    /* This is just a basic example */
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+  }
+
+  header {
+   
+      background-color: #333;
+      color: white;
+      padding: 20px;
+     
+  }
+
+  nav {
+   
+    background-color: #cde2f1;
+      padding: 10px;
+      
+     
+  }
+ul{
+  float: none;
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+      justify-content: space-between;
+     
+  
+}
+
+  section {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      
+  }
+
+  .product {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+      background-color: white;
+      width: 200px;
+  }
+
+  .product img {
+      max-width: 100%;
+      height: auto;
+  }
+</style>
+
+
+</head>
+<body>
+
+<header>
+  
+    <h1>Ymolbi</h1>
+    
+  <div>
+    <span class="icon cart-icon"></span>
+    <span class="icon heart-icon"></span>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Trading</a></li>
+        <li><a href="#">Electronics</a></li>
+        <li><a href="#">Toys</a></li>
+        <li><a href="#">Mobiles</a></li>
+        <li><a href="#">Applines</a></li>
+        <li><a href="#">Home & furniture </a></li>
+    </ul>
+   
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">Search</button>
+      </form>
+      
+    </div>
+</nav>
+
+
+
+
+
+
+
+<section>
+ 
+    <!-- Product 1 -->
+    <div class="product">
+        <img src="z1.jpg" alt="Product 1">
+        <h2>oppo A59</h2>
+        <p>6GB,128GB.</p>
+        <p>Price: ₹14500</p>
+        <button>Add to Cart</button>
+
+        <title>5-Star Rating System</title>
+<style>
+    .rating {
+        unicode-bidi: bidi-override;
+        direction: rtl;
+        text-align: center;
+    }
+    .rating > span {
+        display: inline-block;
+        position: relative;
+        width: 1.1em;
+        color: #FFD700; /* Yellow color */
+    }
+    .rating > span:hover:before,
+    .rating > span:hover ~ span:before {
+        content: "\2605";
+        position: absolute;
+        color: #FFD700; /* Yellow color */
+    }
+</style>
+</head>
+<body>
+
+<div class="rating">
+    <span>&#x2606;</span>
+    <span>&#x2606;</span>
+    <span>&#x2606;</span>
+    <span>&#x2606;</span>
+    <span>&#x2606;</span>
+</div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+        <img src="z2.jpg" alt="Product 2">
+        <h2>Product 2</h2>
+        <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Price: $75</p>
+        <button>Add to Cart</button>
+
+        <title>5-Star Rating System</title>
+<style>
+    .rating {
+        unicode-bidi: bidi-override;
+        direction: rtl;
+        text-align: center;
+    }
+    .rating > span {
+        display: inline-block;
+        position: relative;
+        width: 1.1em;
+        color: #FFD700; /* Yellow color */
+    }
+    .rating > span:hover:before,
+    .rating > span:hover ~ span:before {
+        content: "\2605";
+        position: absolute;
+        color: #FFD700; /* Yellow color */
+    }
+</style>
+</head>
+<body>
+
+<div class="rating">
+    <span>&#x2606;</span>
+    <span>&#x2606;</span>
+    <span>&#x2606;</span>
+    <span>&#x2606;</span>
+    <span>&#x2606;</span>
+</div>
+    </div>
+    
+<!-- Product 1 -->
+<div class="product">
+  <img src="z3.jpg" alt="Product 1">
+  <h2>Product 1</h2>
+  <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $50</p>
+  <button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+  <img src="z4.jpg" alt="Product 2">
+  <h2>Product 2</h2>
+  <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $75</p>
+  <button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+  <img src="z5.jpg" alt="Product 1">
+  <h2>Product 1</h2>
+  <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $50</p>
+  <button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+  <img src="z6.jpg" alt="Product 2">
+  <h2>Product 2</h2>
+  <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $75</p>
+  <button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+<img src="z7.jpg" alt="Product 1">
+<h2>Product 1</h2>
+<p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Price: $50</p>
+<button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+<img src="z8.jpg" alt="Product 2">
+<h2>Product 2</h2>
+<p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Price: $75</p>
+<button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+  <img src="z9.jpg" alt="Product 1">
+  <h2>Product 1</h2>
+  <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $50</p>
+  <button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+  <img src="z10.jpg" alt="Product 2">
+  <h2>Product 2</h2>
+  <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $75</p>
+  <button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+<img src="z11.jpg" alt="Product 1">
+<h2>Product 1</h2>
+<p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Price: $50</p>
+<button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+<img src="z12.jpg" alt="Product 2">
+<h2>Product 2</h2>
+<p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Price: $75</p>
+<button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+  <img src="z13.jpg" alt="Product 1">
+  <h2>Product 1</h2>
+  <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $50</p>
+  <button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+  <img src="z14.jpg" alt="Product 2">
+  <h2>Product 2</h2>
+  <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $75</p>
+  <button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+<img src="z15.jpg" alt="Product 1">
+<h2>Product 1</h2>
+<p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Price: $50</p>
+<button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+<img src="z16.jpg" alt="Product 2">
+<h2>Product 2</h2>
+<p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Price: $75</p>
+<button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+  <img src="z17.jpg" alt="Product 1">
+  <h2>Product 1</h2>
+  <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $50</p>
+  <button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+  <img src="z18.jpg" alt="Product 2">
+  <h2>Product 2</h2>
+  <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $75</p>
+  <button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+<img src="z19.jpg" alt="Product 1">
+<h2>Product 1</h2>
+<p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Price: $50</p>
+<button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+<img src="z20.jpg" alt="Product 2">
+<h2>Product 2</h2>
+<p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Price: $75</p>
+<button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+  <img src="z21.jpg" alt="Product 1">
+  <h2>Product 1</h2>
+  <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $50</p>
+  <button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+  <img src="z22.jpg" alt="Product 2">
+  <h2>Product 2</h2>
+  <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $75</p>
+  <button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+<img src="z23.jpg" alt="Product 1">
+<h2>Product 1</h2>
+<p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Price: $50</p>
+<button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+<img src="z24.jpg" alt="Product 2">
+<h2>Product 2</h2>
+<p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Price: $75</p>
+<button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+  <img src="z25.jpg" alt="Product 1">
+  <h2>Product 1</h2>
+  <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $50</p>
+  <button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+  <img src="z26.jpg" alt="Product 2">
+  <h2>Product 2</h2>
+  <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $75</p>
+  <button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+  <img src="z27.jpg" alt="Product 1">
+  <h2>Product 1</h2>
+  <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $50</p>
+  <button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+  <img src="z28.jpg" alt="Product 2">
+  <h2>Product 2</h2>
+  <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $75</p>
+  <button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+<img src="z29.jpg" alt="Product 1">
+<h2>Product 1</h2>
+<p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Price: $50</p>
+<button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+<img src="z30.jpg" alt="Product 2">
+<h2>Product 2</h2>
+<p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Price: $75</p>
+<button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+  <img src="z31.jpg" alt="Product 1">
+  <h2>Product 1</h2>
+  <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $50</p>
+  <button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+  <img src="z3.jpg" alt="Product 2">
+  <h2>Product 2</h2>
+  <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $75</p>
+  <button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+<img src="z11.jpg" alt="Product 1">
+<h2>Product 1</h2>
+<p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Price: $50</p>
+<button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+<img src="z12.jpg" alt="Product 2">
+<h2>Product 2</h2>
+<p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Price: $75</p>
+<button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+  <img src="z13.jpg" alt="Product 1">
+  <h2>Product 1</h2>
+  <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $50</p>
+  <button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+  <img src="z14.jpg" alt="Product 2">
+  <h2>Product 2</h2>
+  <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $75</p>
+  <button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+<img src="z15.jpg" alt="Product 1">
+<h2>Product 1</h2>
+<p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Price: $50</p>
+<button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+<img src="z16.jpg" alt="Product 2">
+<h2>Product 2</h2>
+<p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Price: $75</p>
+<button>Add to Cart</button>
+</div>
+<!-- Product 1 -->
+<div class="product">
+  <img src="z17.jpg" alt="Product 1">
+  <h2>Product 1</h2>
+  <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $50</p>
+  <button>Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product">
+  <img src="z18.jpg" alt="Product 2">
+  <h2>Product 2</h2>
+  <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Price: $75</p>
+  <button>Add to Cart</button>
+</div>
+    <!-- Repeat the above structure for additional products -->
+
+</section>
+<body>
+  <h2>Order Form</h2>
+  <form action="/submit_order" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="product">Product:</label>
+    <select id="product" name="product">
+      <option value="product1">Product 1</option>
+      <option value="product2">Product 2</option>
+      <option value="product3">Product 3</option>
+    </select>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" required>
+
+    <input type="submit" value="Submit Order">
+  </form>
+</body>
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <p>We are dedicated to providing high-quality products and excellent customer service. At Ymolbi Store, we offer a wide range of products including electronics, clothing, accessories, and more. Our mission is to make your shopping experience enjoyable and convenient.</p>
+    <p>Feel free to explore our website and discover the latest trends and must-have items. If you have any questions or feedback, please don't hesitate to contact us. Thank you for choosing Ymolbi Store!</p>
+    </div>
+    <div class="footer-section">
+      <h3>Customer Service</h3>
+      <ul class="footer-links">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Shipping Information</a></li>
+        <li><a href="#">Returns & Exchanges</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <ul class="social-media-icons">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Have questions or feedback? Fill out the form below and we'll get back to you as soon as possible.</p>
+    
+    <div class="contact-form">
+      <form action="submit_contact_form.php" method="post">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <textarea name="message" placeholder="Your Message" required></textarea><br>
+        <input type="submit" value="Send Message">
+      </form>
+    </div>
+    <div class="shipping-info-section">
+      <h2>Shipping Information</h2>
+      <p>We offer shipping to most countries worldwide. Shipping costs and delivery times may vary depending on your location and the shipping method selected at checkout.</p>
+      
+      <h3>Shipping Methods</h3>
+      <ul>
+        <li>Standard Shipping: Delivery within 5-7 business days</li>
+        <li>Expedited Shipping: Delivery within 2-3 business days</li>
+        <li>Express Shipping: Next-day delivery</li>
+      </ul>
+      
+      <h3>Shipping Costs</h3>
+      <p>Shipping costs are calculated based on the weight of your order and your shipping address. You can view the shipping costs for your order during the checkout process.</p>
+      
+      <h3>Track Your Order</h3>
+      <p>Once your order has been shipped, you will receive a tracking number via email. You can use this tracking number to track the status of your order on our website or the carrier's website.</p>
+    </div>
+    <div class="returns-exchanges-section">
+      <h2>Returns & Exchanges</h2>
+      <p>We want you to be completely satisfied with your purchase. If for any reason you are not satisfied, we offer returns and exchanges within 30 days of delivery.</p>
+      
+      <h3>Returns</h3>
+      <p>To initiate a return, please contact our customer service team with your order number and reason for return. Once your return is approved, you will receive instructions on how to return the item.</p>
+      
+      <h3>Exchanges</h3>
+      <p>If you would like to exchange an item for a different size or color, please contact our customer service team. We will help you process the exchange and provide you with a return label.</p>
+      
+      <h3>Refunds</h3>
+      <p>Refunds will be issued to the original payment method within 7-10 business days after we receive and inspect the returned item.</p>
+    </div>
+    <div class="follow-us-section">
+      <h2>Follow Us</h2>
+      <ul class="social-media-icons">
+        <li><a href="https://www.facebook.com/YourPage" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://twitter.com/YourPage" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/YourPage" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.pinterest.com/YourPage" target="_blank"><i class="fab fa-pinterest"></i></a></li>
+      </ul>
+    </div>
+
+    <p>&copy; 2024 Ymolbi  E-Commerce Store. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
